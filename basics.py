@@ -191,6 +191,8 @@ dictionary.update({"phy" : x})
 print(dictionary)
 
 print(type(dictionary))
+lsit = [1,1,1,1,1,1]
+
 
 
 
