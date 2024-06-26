@@ -1,0 +1,193 @@
+# print("hello world")
+# print("my age is 20","i have apples")
+
+# name = "deepak"
+
+# price = 26
+# age = 21
+# print("my name is :",age)
+
+# print(type(age)
+# )
+# print(type(name))
+
+# a=5
+# b=3
+# sum = a + b
+# print(sum)
+
+# a = 20
+# b = 10
+# print(not(a<b))
+
+# a = 5
+# b = 7.4
+
+# print(a+b)
+
+# NAME = input("AANTER YOUR NAME ")
+# print("welcome",NAME)
+
+# num1 = int(input("enter your first number"))
+# num2 = int(input("enter your seconf number :"))
+# print("sum=",num1+num2)
+
+# BASIC 2
+
+# str = "i have my opnion also"
+# ch = str[4]
+# print(ch)
+# # 
+# str = "the boys season 3 is gonna be wild"
+# ch = str[7]
+# print(ch)
+
+# slicing in python
+
+# str = "stranger things is trending"
+# ch  = str[2:6]
+# print(ch)
+
+# firstname = input("enter your first name")
+# print(len(firstname),firstname)
+
+# CONDITIONAL STATEMENT
+#  passing_marks = int(input("enter your marks :"))
+
+# if(passing_marks < 33):
+#    print("you are fail")
+#    print("do rexam")
+# elif(passing_marks > 33):
+#    print("you got passed")
+#    print("congratulation")
+# elif(passing_marks > 70):
+#    print("you got A")      
+   
+# passing_marks = int(input("Enter your marks: "))
+
+# if passing_marks < 33:
+#     print("You failed")
+#     print("Do re-exam")
+# elif passing_marks > 70:
+#     print("You got an A")
+# elif passing_marks >= 33:
+#     print("You passed")
+#     print("Congratulations")
+
+# marks = int(input("Enter your marks:"))
+
+# if(marks >= 90):
+#    grade = "A"
+# elif(marks < 90 and marks >= 80):
+#    grade = "B"
+# elif(marks < 80 and marks >= 70):
+#    grade = "c"
+# elif(marks < 70 and marks >= 60):
+#    grade = "d"
+# elif(marks < 50):
+#    grade = "f"
+
+# WAP CHECK NUMER IS EVEN OR ODD
+
+# num = int(input("Enter your number"))
+# rem = num % 2
+# if(rem == 0):
+#     print("even")
+# else:
+#     print("odd")
+
+
+
+   
+# print("your grade is:", grade)
+
+# LIST IN PYTHON
+# list = [1 ,2 ,3 , 4,]
+
+# list.append(5)
+# print(list)
+
+# list.sort(reverse= True )
+# print(list)
+
+# list.insert(5,11)
+# print(list)
+
+# list.remove(1)  ##element dekhta h ## 
+# print(list)
+
+# list.remove(3)
+# print(list)
+
+# list.pop(1)
+# print(list)
+
+# movies = []
+# mov = input("enter your moive 1")
+# movies.append(mov)
+# mov = input("enter your movie 2")
+# movies.append(mov)
+# mov = input("enter your movie name 3")
+# movies.append(mov)
+
+# print(movies)
+
+# list = [input("num1"),input("num2"),input("num3")]
+# copy_list = list.copy()
+# copy_list.reverse()
+
+# if(list == copy_list):
+#  print("this list an palindrome ")
+# else:
+#  print("this list is not pallindrome")
+
+
+
+
+
+# info = {
+#     "name" : "deepak",
+#     "class" : "cse",
+#     "skils" : ["python","javascript","aws","azure"] # type: ignore
+# }
+
+# info.update({"name" :"tela"})
+# print(info)
+
+# day1 = {
+#     "excercise" : "no",
+#     "breakfast" : "yes",
+#     "study": {
+#         "math": "yes",
+#         "aws" : "yes",
+#         "magic" : "no", 
+#     },
+#     "lunch" : "yes",
+# }
+# day1.update({"excercise" : "yes",})
+# print(day1["excercise"])
+
+# collection = {1,2,3,4,5,}
+# print(type(collection))
+#  tupple ko = ()
+#  set ko = {}
+#  dictionary ko {}
+
+# dictionary = {
+#               "cat" : "a small animal",
+#               "table" : ["a piece of furniture","listof facts and figure"]
+
+#                     }
+# print(dictionaary)
+
+# set={
+#     "python","java","c++","c++","python","javascript","java","python","java","c++","c"}
+# print(len(set))
+
+dictionary ={}
+
+x = int(input("enter the marks of phy:"))
+dictionary.update({"phy" : x})
+print(dictionary)
+
+
