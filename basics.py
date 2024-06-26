@@ -190,4 +190,7 @@ x = int(input("enter the marks of phy:"))
 dictionary.update({"phy" : x})
 print(dictionary)
 
+print(type(dictionary))
+
+
 
