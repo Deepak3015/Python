@@ -184,15 +184,53 @@
 #     "python","java","c++","c++","python","javascript","java","python","java","c++","c"}
 # print(len(set))
 
-dictionary ={}
+# dictionary ={}
 
-x = int(input("enter the marks of phy:"))
-dictionary.update({"phy" : x})
-print(dictionary)
+# x = int(input("enter the marks of phy:"))
+# dictionary.update({"phy" : x})
+# print(dictionary)
 
-print(type(dictionary))
-lsit = [1,1,1,1,1,1]
+# print(type(dictionary))
+# lsit = [1,1,1,1,1,1]
+
+# values = {
+#     ("float",9.0),
+#     ("int",9)
+# }
+# print(type(values))
+
+# i = 1;
+# while i <= 10:
+#     print("tanmay",i)
+#     i+=2
+    ##PRINT A NUMBER FROM FROM 1 TO 100##
+# i=1;
+# while i<=100:
+#     print("current",i)
+#     i+=1
+
+# i = 100;
+# while i>=1:
+#     print("current",i)
+#     i-=1
+# x=int(input("enter your number"))
+# i=1;
+# while i*x<=x*10:
+#     print(i*x)
+#     i+=1
 
 
+list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# x = int(input("Please enter the length +1 of list: "))
+# i = 0
+
+# while i < x:  
+#     print(list[i])
+#     i += 1
+
+i=0;
+while i<len(list):
+    print(list[i])
+    i+=1
 
 
