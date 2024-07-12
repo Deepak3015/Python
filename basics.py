@@ -162,7 +162,7 @@
 #         "aws" : "yes",
 #         "magic" : "no", 
 #     },
-#     "lunch" : "yes",
+#     "lunch" : "yes", 
 # }
 # day1.update({"excercise" : "yes",})
 # print(day1["excercise"])
@@ -220,17 +220,19 @@
 #     i+=1
 
 
-list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 # x = int(input("Please enter the length +1 of list: "))
 # i = 0
 
 # while i < x:  
 #     print(list[i])
-#     i += 1
+#     i +=  1
 
-i=0;
-while i<len(list):
-    print(list[i])
-    i+=1
+# i=0;
+# while i<len(list):
+#     print(list[i])
+#     i+=1
+# FUNCTION AND RETURN STATEMENT #
+
 
 
