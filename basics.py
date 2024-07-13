@@ -138,7 +138,7 @@
 
 # if(list == copy_list):
 #  print("this list an palindrome ")
-# else:
+# else:cl
 #  print("this list is not pallindrome")
 
 
@@ -234,5 +234,51 @@
 #     i+=1
 # FUNCTION AND RETURN STATEMENT #
 
+# def mulxi(a,b):
+#     mulxi = a*b
+#     print(mulxi)
+#     return(mulxi)
+
+# mulxi(2,8)
 
 
+# def aver(a,b,c):
+#     average = a+b+c
+#     total = average/3
+#     print(total)
+#     return total
+
+# aver(2,6,8)
+# def fct(n):
+#     fact = 1
+#     for i in range(1,n+1):
+#         fact *= i
+#         print(fact)
+#     return(fact)
+
+
+# fct(7)
+
+#USD TO INR
+
+# def usd(n):
+#     print(n*83)
+
+# usd(9)
+
+def checker(n):
+    if(n%2==0):
+        print("this is an even number")
+    else:
+        print("this is an odd number")
+
+
+n=int(input("enter your number"))
+result = checker(n)
+print(result)
+
+
+
+    
+    
+     
