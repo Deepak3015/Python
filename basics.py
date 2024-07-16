@@ -266,17 +266,26 @@
 
 # usd(9)
 
-def checker(n):
-    if(n%2==0):
-        print("this is an even number")
-    else:
-        print("this is an odd number")
+# def checker(n):
+#     if(n%2==0):
+#         print("this is an even number")
+#     else:
+#         print("this is an odd number")
 
 
-n=int(input("enter your number"))
-result = checker(n)
+# n=int(input("enter your number"))
+# result = checker(n)
+# print(result)
+
+def fact(n):
+        if (n==1 or n==0):
+            return 1
+        return fact(n-1) * n
+
+
+
+result = fact(5)
 print(result)
-
 
 
     
