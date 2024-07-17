@@ -277,15 +277,28 @@
 # result = checker(n)
 # print(result)
 
-def fact(n):
-        if (n==1 or n==0):
-            return 1
-        return fact(n-1) * n
+# def fact(n):
+#         if (n==1 or n==0):
+#             return 1
+#         return fact(n-1) * n
 
 
 
-result = fact(5)
-print(result)
+# result = fact(5)
+# print(result)
+
+# def nat(n):
+#     if(n==1):
+#         return 1
+#     return nat(n-1)+n
+
+# result =   nat(2)
+# print(result)
+
+f = open("dexter.txt","r")
+data = f.read()
+print(data)
+print(type(data))
 
 
     
