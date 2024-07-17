@@ -1,3 +1,4 @@
+import os
 # print("hello world")
 # print("my age is 20","i have apples")
 
@@ -295,10 +296,61 @@
 # result =   nat(2)
 # print(result)
 
-f = open("dexter.txt","r")
-data = f.read()
-print(data)
-print(type(data))
+# f = open("dexter.txt","r")
+# data = f.read()
+# print(data)
+# print(type(data))
+
+# f = open("dexter.txt","r")
+# line1 = f.readline()
+# print(line1)
+ 
+# line2 = f.readline()
+# print(line2)
+
+# f = open("dexter.txt  ","a")
+# f.write("\n after the weekend")
+ 
+# f.close()
+
+# with open("machine.txt","w+") as f:
+#     data = f.write("hi everyone \n we learning file i/o \n using java  \n i like programming in html")
+#     print(data)
+#     f.close()
+
+# def search_word(word):
+#     with open("machine.txt","r") as f:
+#         data = f.read()
+#         if(data.find(word)!= -1):
+#             print("found")
+#         else:
+#             print("not found")
+
+
+# search_word("html")
+
+def check_wrodline(word):
+    
+    lice_no= 1
+    with open("machine.txt","r") as f:
+        while word:
+            if(word in )
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
