@@ -220,7 +220,7 @@
 #     i+=1
 
 
-list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 # x = int(input("Please enter the length +1 of list: "))
 # i = 0
 
@@ -228,9 +228,45 @@ list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 #     print(list[i])
 #     i += 1
 
-i=0;
-while i<len(list):
-    print(list[i])
-    i+=1
+# i=0;
+# while i<len(list):
+#     print(list[i])
+#     i+=1  
+# for el in range(1,100,1):
+#     print(el)
+
+
+Cafe_Menu = {
+    'pizza': 60,
+    'pazta': 60,
+    'tikki': 70
+}
+
+# Display the menu
+print(f'Hello! Here is our menu: {Cafe_Menu}')
+
+# Take the customer's first order
+Customer_order = input('Enter your order: ')
+total_order = 0
+
+if Customer_order in Cafe_Menu:
+    total_order += Cafe_Menu[Customer_order]
+    print(f'Your order for {Customer_order} has been placed.')
+else:
+    print(f'Sorry, {Customer_order} is not available. Please select from the menu.')
+
+# Ask if the customer wants to order anything else
+Second_order = input('Would you like to order anything else (Yes/No)? ').strip().lower()
+
+if Second_order == 'yes':
+    item = input('Enter your order: ').strip()
+    if item in Cafe_Menu:
+        total_order += Cafe_Menu[item]
+        print(f'Your order for {item} has been placed.')
+    else:
+        print(f'Sorry, {item} is not available. Please select from the menu.')
+
+# Display the total
+print(f'Your total is: {total_order}')
 
 
