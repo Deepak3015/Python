@@ -232,45 +232,45 @@ import os
 # i=0;
 # while i<len(list):
 #     print(list[i])
-<<<<<<< HEAD
-#     i+=1  
-# for el in range(1,100,1):
-#     print(el)
+# <<<<<<< HEAD
+# #     i+=1  
+# # for el in range(1,100,1):
+# #     print(el)
 
 
-Cafe_Menu = {
-    'pizza': 60,
-    'pazta': 60,
-    'tikki': 70
-}
+# Cafe_Menu = {
+#     'pizza': 60,
+#     'pazta': 60,
+#     'tikki': 70
+# }
 
-# Display the menu
-print(f'Hello! Here is our menu: {Cafe_Menu}')
+# # Display the menu
+# print(f'Hello! Here is our menu: {Cafe_Menu}')
 
-# Take the customer's first order
-Customer_order = input('Enter your order: ')
-total_order = 0
+# # Take the customer's first order
+# Customer_order = input('Enter your order: ')
+# total_order = 0
 
-if Customer_order in Cafe_Menu:
-    total_order += Cafe_Menu[Customer_order]
-    print(f'Your order for {Customer_order} has been placed.')
-else:
-    print(f'Sorry, {Customer_order} is not available. Please select from the menu.')
+# if Customer_order in Cafe_Menu:
+#     total_order += Cafe_Menu[Customer_order]
+#     print(f'Your order for {Customer_order} has been placed.')
+# else:
+#     print(f'Sorry, {Customer_order} is not available. Please select from the menu.')
 
-# Ask if the customer wants to order anything else
-Second_order = input('Would you like to order anything else (Yes/No)? ').strip().lower()
+# # Ask if the customer wants to order anything else
+# Second_order = input('Would you like to order anything else (Yes/No)? ').strip().lower()
 
-if Second_order == 'yes':
-    item = input('Enter your order: ').strip()
-    if item in Cafe_Menu:
-        total_order += Cafe_Menu[item]
-        print(f'Your order for {item} has been placed.')
-    else:
-        print(f'Sorry, {item} is not available. Please select from the menu.')
+# if Second_order == 'yes':
+#     item = input('Enter your order: ').strip()
+#     if item in Cafe_Menu:
+#         total_order += Cafe_Menu[item]
+#         print(f'Your order for {item} has been placed.')
+#     else:
+#         print(f'Sorry, {item} is not available. Please select from the menu.')
 
-# Display the total
-print(f'Your total is: {total_order}')
-=======
+# # Display the total
+# print(f'Your total is: {total_order}')
+# =======
 #     i+=1
 # FUNCTION AND RETURN STATEMENT #
 
@@ -280,7 +280,7 @@ print(f'Your total is: {total_order}')
 #     return(mulxi)
 
 # mulxi(2,8)
->>>>>>> 0a009044ed069d62c43871c8895d2e3974734675
+# >>>>>>> 0a009044ed069d62c43871c8895d2e3974734675
 
 
 # def aver(a,b,c):
@@ -369,14 +369,29 @@ print(f'Your total is: {total_order}')
 
 # search_word("html")
 
-def check_wrodline(word):
+# def check_wrodline(word):
     
-    lice_no= 1
-    with open("machine.txt","r") as f:
-        while word:
-            if(word in )
-        
+#     lice_no= 1
+#     with open("machine.txt","r") as f:
+#         while word:
+#             if(word in )
 
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print('*',end=" ")
+#     print()
+
+# r = 6
+# for i in range(1,r+1):
+#     for j in range(1,i+1):
+#        print('*',end=' ')
+#     print()
+
+# r = 6
+# for i in range(r,0,-1):
+#     for j in range(i):
+#         print('x',end =' ')
+#     print()
 
     
 
