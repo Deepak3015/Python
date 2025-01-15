@@ -1,3 +1,4 @@
+import os
 # print("hello world")
 # print("my age is 20","i have apples")
 
@@ -138,7 +139,7 @@
 
 # if(list == copy_list):
 #  print("this list an palindrome ")
-# else:
+# else:cl
 #  print("this list is not pallindrome")
 
 
@@ -162,7 +163,7 @@
 #         "aws" : "yes",
 #         "magic" : "no", 
 #     },
-#     "lunch" : "yes",
+#     "lunch" : "yes", 
 # }
 # day1.update({"excercise" : "yes",})
 # print(day1["excercise"])
@@ -226,11 +227,12 @@
 
 # while i < x:  
 #     print(list[i])
-#     i += 1
+#     i +=  1
 
 # i=0;
 # while i<len(list):
 #     print(list[i])
+<<<<<<< HEAD
 #     i+=1  
 # for el in range(1,100,1):
 #     print(el)
@@ -268,5 +270,129 @@ if Second_order == 'yes':
 
 # Display the total
 print(f'Your total is: {total_order}')
+=======
+#     i+=1
+# FUNCTION AND RETURN STATEMENT #
+
+# def mulxi(a,b):
+#     mulxi = a*b
+#     print(mulxi)
+#     return(mulxi)
+
+# mulxi(2,8)
+>>>>>>> 0a009044ed069d62c43871c8895d2e3974734675
 
 
+# def aver(a,b,c):
+#     average = a+b+c
+#     total = average/3
+#     print(total)
+#     return total
+
+# aver(2,6,8)
+# def fct(n):
+#     fact = 1
+#     for i in range(1,n+1):
+#         fact *= i
+#         print(fact)
+#     return(fact)
+
+
+# fct(7)
+
+#USD TO INR
+
+# def usd(n):
+#     print(n*83)
+
+# usd(9)
+
+# def checker(n):
+#     if(n%2==0):
+#         print("this is an even number")
+#     else:
+#         print("this is an odd number")
+
+
+# n=int(input("enter your number"))
+# result = checker(n)
+# print(result)
+
+# def fact(n):
+#         if (n==1 or n==0):
+#             return 1
+#         return fact(n-1) * n
+
+
+
+# result = fact(5)
+# print(result)
+
+# def nat(n):
+#     if(n==1):
+#         return 1
+#     return nat(n-1)+n
+
+# result =   nat(2)
+# print(result)
+
+# f = open("dexter.txt","r")
+# data = f.read()
+# print(data)
+# print(type(data))
+
+# f = open("dexter.txt","r")
+# line1 = f.readline()
+# print(line1)
+ 
+# line2 = f.readline()
+# print(line2)
+
+# f = open("dexter.txt  ","a")
+# f.write("\n after the weekend")
+ 
+# f.close()
+
+# with open("machine.txt","w+") as f:
+#     data = f.write("hi everyone \n we learning file i/o \n using java  \n i like programming in html")
+#     print(data)
+#     f.close()
+
+# def search_word(word):
+#     with open("machine.txt","r") as f:
+#         data = f.read()
+#         if(data.find(word)!= -1):
+#             print("found")
+#         else:
+#             print("not found")
+
+
+# search_word("html")
+
+def check_wrodline(word):
+    
+    lice_no= 1
+    with open("machine.txt","r") as f:
+        while word:
+            if(word in )
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+     
