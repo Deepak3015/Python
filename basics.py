@@ -409,6 +409,68 @@ import os
 # for i in range(n):
 #     print(' ' * (i) + '* ' *(n-i))
 
+phone_book = {}
+
+# Menu and instructions
+print(
+    """Phonebook Operations:
+    1 = Add a contact in PhoneBook
+    2 = Delete a contact in PhoneBook
+    3 = Search for a contact in PhoneBook
+    4 = List all contacts in PhoneBook
+    5 = Exit
+    """
+)
+
+# Continuous loop for multiple operations
+while True:
+    # User input for operation choice
+    User_choice = input('Enter your operation "1", "2", "3", "4", or "5": ')
+    
+    if User_choice == "1":
+        # Add a contact
+        Contact_Name = input('Enter the name of the contact: ')
+        Contact_Number = input(f'Enter the number for {Contact_Name}: ')
+        if Contact_Name in phone_book:
+            print('This contact already exists.')
+        else:
+            phone_book[Contact_Name] = Contact_Number
+            print(f'{Contact_Name} has been saved in the phonebook.')
+    
+    elif User_choice == "2":
+        # Delete a contact
+        del_contact = input('Enter the contact name you want to delete: ')
+        if del_contact in phone_book:
+            del phone_book[del_contact]
+            print(f'{del_contact} has been deleted.')
+        else:
+            print(f'{del_contact} does not exist in the phonebook.')
+    
+    elif User_choice == "3":
+        # Search for a contact
+        Search_contact = input('Enter the contact name you want to search for: ')
+        if Search_contact in phone_book:
+            print(f'{Search_contact}: {phone_book[Search_contact]}')
+        else:
+            print('This contact does not exist.')
+    
+    elif User_choice == "4":
+        # List all contacts
+        if phone_book:
+            print("Phonebook entries:")
+            for name, phone in phone_book.items():
+                print(f"{name}: {phone}")
+        else:
+            print("The phonebook is empty.")
+    
+    elif User_choice == "5":
+        # Exit the program
+        print("Exiting PhoneBook. Goodbye!")
+        break
+    
+    else:
+        # Invalid input handling
+        print("Invalid choice. Please enter a number between 1 and 5.")
 
 
 
