@@ -409,68 +409,118 @@ import os
 # for i in range(n):
 #     print(' ' * (i) + '* ' *(n-i))
 
-phone_book = {}
+# phone_book = {}
 
-# Menu and instructions
-print(
-    """Phonebook Operations:
-    1 = Add a contact in PhoneBook
-    2 = Delete a contact in PhoneBook
-    3 = Search for a contact in PhoneBook
-    4 = List all contacts in PhoneBook
-    5 = Exit
-    """
-)
+# # Menu and instructions
+# print(
+#     """Phonebook Operations:
+#     1 = Add a contact in PhoneBook
+#     2 = Delete a contact in PhoneBook
+#     3 = Search for a contact in PhoneBook
+#     4 = List all contacts in PhoneBook
+#     5 = Exit
+#     """
+# )
 
-# Continuous loop for multiple operations
-while True:
-    # User input for operation choice
-    User_choice = input('Enter your operation "1", "2", "3", "4", or "5": ')
+# # Continuous loop for multiple operations
+# while True:
+#     # User input for operation choice
+#     User_choice = input('Enter your operation "1", "2", "3", "4", or "5": ')
     
-    if User_choice == "1":
-        # Add a contact
-        Contact_Name = input('Enter the name of the contact: ')
-        Contact_Number = input(f'Enter the number for {Contact_Name}: ')
-        if Contact_Name in phone_book:
-            print('This contact already exists.')
-        else:
-            phone_book[Contact_Name] = Contact_Number
-            print(f'{Contact_Name} has been saved in the phonebook.')
+#     if User_choice == "1":
+#         # Add a contact
+#         Contact_Name = input('Enter the name of the contact: ')
+#         Contact_Number = input(f'Enter the number for {Contact_Name}: ')
+#         if Contact_Name in phone_book:
+#             print('This contact already exists.')
+#         else:
+#             phone_book[Contact_Name] = Contact_Number
+#             print(f'{Contact_Name} has been saved in the phonebook.')
     
-    elif User_choice == "2":
-        # Delete a contact
-        del_contact = input('Enter the contact name you want to delete: ')
-        if del_contact in phone_book:
-            del phone_book[del_contact]
-            print(f'{del_contact} has been deleted.')
-        else:
-            print(f'{del_contact} does not exist in the phonebook.')
+#     elif User_choice == "2":
+#         # Delete a contact
+#         del_contact = input('Enter the contact name you want to delete: ')
+#         if del_contact in phone_book:
+#             del phone_book[del_contact]
+#             print(f'{del_contact} has been deleted.')
+#         else:
+#             print(f'{del_contact} does not exist in the phonebook.')
     
-    elif User_choice == "3":
-        # Search for a contact
-        Search_contact = input('Enter the contact name you want to search for: ')
-        if Search_contact in phone_book:
-            print(f'{Search_contact}: {phone_book[Search_contact]}')
-        else:
-            print('This contact does not exist.')
+#     elif User_choice == "3":
+#         # Search for a contact
+#         Search_contact = input('Enter the contact name you want to search for: ')
+#         if Search_contact in phone_book:
+#             print(f'{Search_contact}: {phone_book[Search_contact]}')
+#         else:
+#             print('This contact does not exist.')
     
-    elif User_choice == "4":
-        # List all contacts
-        if phone_book:
-            print("Phonebook entries:")
-            for name, phone in phone_book.items():
-                print(f"{name}: {phone}")
-        else:
-            print("The phonebook is empty.")
+#     elif User_choice == "4":
+#         # List all contacts
+#         if phone_book:
+#             print("Phonebook entries:")
+#             for name, phone in phone_book.items():
+#                 print(f"{name}: {phone}")
+#         else:
+#             print("The phonebook is empty.")
     
-    elif User_choice == "5":
-        # Exit the program
-        print("Exiting PhoneBook. Goodbye!")
-        break
+#     elif User_choice == "5":
+#         # Exit the program
+#         print("Exiting PhoneBook. Goodbye!")
+#         break
     
+#     else:
+#         # Invalid input handling
+#         print("Invalid choice. Please enter a number between 1 and 5.")
+
+
+# ---------------------------------------------Todo-list app------------------------------------------------------------------------------
+
+def todo():
+    tasks = []
+    Number_tasks = int(input("Welcome to the todo Enter how many task you gonna perform today :"))
+    for i in range (1,Number_tasks+1):
+        Current_task = input(f'Enter you task{i} :')
+        tasks.append(Current_task)
+    
+    if len(tasks) >= 3:
+        print(f'You Gotta Do a lot Today\n{tasks}')
     else:
-        # Invalid input handling
-        print("Invalid choice. Please enter a number between 1 and 5.")
+        print(f'Yee you have less Work Today\n{tasks}')
+    while True:
+        operation = int(input("Enter 1-Add\n2-Update\n3-Delete\n4-Views\n5-Exit\n:----->"))
+        if operation == 1:
+            New_task = input('Enter your New Task :')
+            tasks.append(New_task)
+            print(f'{New_task}Has Been added')
+        elif operation == 2:
+            Update_task = input('Enter the task you want to update :')
+            if Update_task in tasks:
+                bhale = input('Enter Your New Task :')
+                ind = tasks.index(Update_task)
+                tasks[ind]=bhale
+                print('....Updating\nTask has been updated')
+            else:
+                print('This task is not Exist')
+        elif operation == 3:
+            Del_task = input('Enter the task you wan to delete : ')
+            if Del_task in tasks:
+                inde = tasks.index(Del_task)
+                del tasks[inde]
+                print('.....Deleting\nTask has been deleted')
+        elif operation == 4:
+                if len(tasks) >= 3:
+                    print(f'You Gotta Do a lot Today\n{tasks}')
+                else:
+                    print(f'Yee you have less Work Today\n{tasks}')
+        elif operation == 5:
+            print('Dhnayawad........')
+            break
+    else:
+        print('please Enter a valid number')
+
+todo()
+
+
 
 
 
