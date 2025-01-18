@@ -524,6 +524,15 @@ import os
 # for char in Vowels:
 #     print(char,end=' ')
 
+a = 0
+b = 1
+
+
+for _ in range(10):
+    next_number = a+b
+    a,b = b,next_number 
+    print(next_number,end=" ") 
+
 
 
 
