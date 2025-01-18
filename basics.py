@@ -524,14 +524,29 @@ import os
 # for char in Vowels:
 #     print(char,end=' ')
 
-a = 0
-b = 1
+# a = 0
+# b = 1
 
 
-for _ in range(10):
-    next_number = a+b
-    a,b = b,next_number 
-    print(next_number,end=" ") 
+# for _ in range(10):
+#     next_number = a+b
+#     a,b = b,next_number 
+#     print(next_number,end=" ") 
+while True:
+
+        Number = int(input('Enter the Number you want to check'))
+        is_prime = True
+
+        for i in range(2,int(Number**0.5)+1):
+            if Number%i == 0:
+                is_prime = False
+                break
+
+        if is_prime:
+            print('it is prime')
+        else:
+            print('not prime')
+
 
 
 
