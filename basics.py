@@ -475,50 +475,54 @@ import os
 
 # ---------------------------------------------Todo-list app------------------------------------------------------------------------------
 
-def todo():
-    tasks = []
-    Number_tasks = int(input("Welcome to the todo Enter how many task you gonna perform today :"))
-    for i in range (1,Number_tasks+1):
-        Current_task = input(f'Enter you task{i} :')
-        tasks.append(Current_task)
+# def todo():
+#     tasks = []
+#     Number_tasks = int(input("Welcome to the todo Enter how many task you gonna perform today :"))
+#     for i in range (1,Number_tasks+1):
+#         Current_task = input(f'Enter you task{i} :')
+#         tasks.append(Current_task)
     
-    if len(tasks) >= 3:
-        print(f'You Gotta Do a lot Today\n{tasks}')
-    else:
-        print(f'Yee you have less Work Today\n{tasks}')
-    while True:
-        operation = int(input("Enter 1-Add\n2-Update\n3-Delete\n4-Views\n5-Exit\n:----->"))
-        if operation == 1:
-            New_task = input('Enter your New Task :')
-            tasks.append(New_task)
-            print(f'{New_task}Has Been added')
-        elif operation == 2:
-            Update_task = input('Enter the task you want to update :')
-            if Update_task in tasks:
-                bhale = input('Enter Your New Task :')
-                ind = tasks.index(Update_task)
-                tasks[ind]=bhale
-                print('....Updating\nTask has been updated')
-            else:
-                print('This task is not Exist')
-        elif operation == 3:
-            Del_task = input('Enter the task you wan to delete : ')
-            if Del_task in tasks:
-                inde = tasks.index(Del_task)
-                del tasks[inde]
-                print('.....Deleting\nTask has been deleted')
-        elif operation == 4:
-                if len(tasks) >= 3:
-                    print(f'You Gotta Do a lot Today\n{tasks}')
-                else:
-                    print(f'Yee you have less Work Today\n{tasks}')
-        elif operation == 5:
-            print('Dhnayawad........')
-            break
-    else:
-        print('please Enter a valid number')
+#     if len(tasks) >= 3:
+#         print(f'You Gotta Do a lot Today\n{tasks}')
+#     else:
+#         print(f'Yee you have less Work Today\n{tasks}')
+#     while True:
+#         operation = int(input("Enter 1-Add\n2-Update\n3-Delete\n4-Views\n5-Exit\n:----->"))
+#         if operation == 1:
+#             New_task = input('Enter your New Task :')
+#             tasks.append(New_task)
+#             print(f'{New_task}Has Been added')
+#         elif operation == 2:
+#             Update_task = input('Enter the task you want to update :')
+#             if Update_task in tasks:
+#                 bhale = input('Enter Your New Task :')
+#                 ind = tasks.index(Update_task)
+#                 tasks[ind]=bhale
+#                 print('....Updating\nTask has been updated')
+#             else:
+#                 print('This task is not Exist')
+#         elif operation == 3:
+#             Del_task = input('Enter the task you wan to delete : ')
+#             if Del_task in tasks:
+#                 inde = tasks.index(Del_task)
+#                 del tasks[inde]
+#                 print('.....Deleting\nTask has been deleted')
+#         elif operation == 4:
+#                 if len(tasks) >= 3:
+#                     print(f'You Gotta Do a lot Today\n{tasks}')
+#                 else:
+#                     print(f'Yee you have less Work Today\n{tasks}')
+#         elif operation == 5:
+#             print('Dhnayawad........')
+#             break
+#     else:
+#         print('please Enter a valid number')
 
-todo()
+# todo()
+
+# Vowels = 'aeiou'
+# for char in Vowels:
+#     print(char,end=' ')
 
 
 
