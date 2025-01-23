@@ -1,4 +1,4 @@
-import os
+# import os
 # print("hello world")
 # print("my age is 20","i have apples")
 
@@ -532,20 +532,30 @@ import os
 #     next_number = a+b
 #     a,b = b,next_number 
 #     print(next_number,end=" ") 
-while True:
+# while True:
 
-        Number = int(input('Enter the Number you want to check'))
-        is_prime = True
+#         Number = int(input('Enter the Number you want to check'))
+#         is_prime = True
 
-        for i in range(2,int(Number**0.5)+1):
-            if Number%i == 0:
-                is_prime = False
-                break
+#         for i in range(2,int(Number**0.5)+1):
+#             if Number%i == 0:
+#                 is_prime = False
+#                 break
 
-        if is_prime:
-            print('it is prime')
-        else:
-            print('not prime')
+#         if is_prime:
+#             print('it is prime')
+#         else:
+#             print('not prime')
+
+class Student:
+    def __init__(Self,fullname):
+        Self.name = fullname
+        print(name)
+        print('adding a student in the database')
+
+
+S1= Student('karan')
+print(S1.name)
 
 
 
