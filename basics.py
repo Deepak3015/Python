@@ -608,7 +608,7 @@ class Complex:
     def show_number(self):
         print(self.real,"i+",self.img,"j")
 
-    def add_number(self,num2):
+    def __add__(self,num2):
         new_real = self.real+num2.real
         new_img = self.real+num2.img
         return Complex(new_img,new_real)
@@ -616,6 +616,7 @@ class Complex:
 num1 = Complex(1,3)
 num1.show_number()
 num2 = Complex(4,5)
-
-num1.add_number(num2)
 num2.show_number()
+num3 = num1+num2
+num3.show_number()
+
