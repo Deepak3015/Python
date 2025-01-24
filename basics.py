@@ -566,27 +566,56 @@
 # s1.getavg
 
 
-class Bank:
-    def __init__(self,balance,accno):
-        self.balance = balance
-        self.accno = accno
-    def debited(self,amount):
-        self.balance -= amount
-        print(f'The {amount} has been Debited to your account no:-{self.accno} ')
-    def credited(self,amount):
-        self.balance += amount
-        print(f'The {amount} has been Credited to your account no:-{self.accno}')
-    def getBal(self):
-        print(f'Your current balance of No -{self.accno} is {self.balance}')
+# class Bank:
+#     def __init__(self,balance,accno):
+#         self.balance = balance
+#         self.accno = accno
+#     def debited(self,amount):
+#         self.balance -= amount
+#         print(f'The {amount} has been Debited to your account no:-{self.accno} ')
+#     def credited(self,amount):
+#         self.balance += amount
+#         print(f'The {amount} has been Credited to your account no:-{self.accno}')
+#     def getBal(self):
+#         print(f'Your current balance of No -{self.accno} is {self.balance}')
 
-acc1=Bank(2000,2334455)
-acc1.debited(500)
-acc1.getBal()
-
-
+# acc1=Bank(2000,2334455)
+# acc1.debited(500)
+# acc1.getBal()
 
 
+# class person:
+#     __name = 'anonymous'
 
-    
-    
-     
+#     def __hello(self):
+#         print('hello')
+
+#     def welcome(self):
+#         self.__hello()
+
+# p1=person()
+
+# print(p1.welcome())
+
+ 
+
+
+class Complex:
+    def __init__(self,real,img):
+        self.real = real
+        self.img  = img
+
+    def show_number(self):
+        print(self.real,"i+",self.img,"j")
+
+    def add_number(self,num2):
+        new_real = self.real+num2.real
+        new_img = self.real+num2.img
+        return Complex(new_img,new_real)
+
+num1 = Complex(1,3)
+num1.show_number()
+num2 = Complex(4,5)
+
+num1.add_number(num2)
+num2.show_number()
