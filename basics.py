@@ -547,22 +547,23 @@
 #         else:
 #             print('not prime')
 
+
 class Student:
-    def __init__(Self,fullname):
-        Self.name = fullname
-        print(name)
-        print('adding a student in the database')
 
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
 
-S1= Student('karan')
-print(S1.name)
+    def getavg(self):
+        sum = 0
+        for val in self.marks :
+            sum +=val
+        print(f"Hi {self.name} your average is ",sum/len(self.marks))
 
+s1 = Student("Deepak",[98,97,95,87])
 
-
-
-
-
-
+s1.name = "Bhola"
+s1.getavg()
 
 
 
