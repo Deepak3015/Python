@@ -548,26 +548,40 @@
 #             print('not prime')
 
 
-class Student:
+# class Student:
 
-    def __init__(self,name,marks):
-        self.name = name
-        self.marks = marks
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
 
-    def getavg(self):
-        sum = 0
-        for val in self.marks :
-            sum +=val
-        print(f"Hi {self.name} your average is ",sum/len(self.marks))
+#     def getavg(self):
+#         sum = 0
+#         for val in self.marks :
+#             sum +=val
+#         print(f"Hi {self.name} your average is ",sum/len(self.marks))
 
-s1 = Student("Deepak",[98,97,95,87])
+# s1 = Student("Deepak",[98,97,95,87])
 
-s1.name = "Bhola"
-s1.getavg()
-
-
+# s1.name = "Bhola"
+# s1.getavg
 
 
+class Bank:
+    def __init__(self,balance,accno):
+        self.balance = balance
+        self.accno = accno
+    def debited(self,amount):
+        self.balance -= amount
+        print(f'The {amount} has been Debited to your account no:-{self.accno} ')
+    def credited(self,amount):
+        self.balance += amount
+        print(f'The {amount} has been Credited to your account no:-{self.accno}')
+    def getBal(self):
+        print(f'Your current balance of No -{self.accno} is {self.balance}')
+
+acc1=Bank(2000,2334455)
+acc1.debited(500)
+acc1.getBal()
 
 
 
