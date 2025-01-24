@@ -600,23 +600,36 @@
  
 
 
-class Complex:
-    def __init__(self,real,img):
-        self.real = real
-        self.img  = img
+# class Complex:
+#     def __init__(self,real,img):
+#         self.real = real
+#         self.img  = img
 
-    def show_number(self):
-        print(self.real,"i+",self.img,"j")
+#     def show_number(self):
+#         print(self.real,"i+",self.img,"j")
 
-    def __add__(self,num2):
-        new_real = self.real+num2.real
-        new_img = self.real+num2.img
-        return Complex(new_img,new_real)
+#     def __add__(self,num2):
+#         new_real = self.real+num2.real
+#         new_img = self.real+num2.img
+#         return Complex(new_img,new_real)
 
-num1 = Complex(1,3)
-num1.show_number()
-num2 = Complex(4,5)
-num2.show_number()
-num3 = num1+num2
-num3.show_number()
+# num1 = Complex(1,3)
+# num1.show_number()
+# num2 = Complex(4,5)
+# num2.show_number()
+# num3 = num1+num2
+# num3.show_number()
 
+
+class order:
+    def __init__(self,order,price):
+        self.order = order
+        self.price = price
+
+    def __gt__(self,odr2):
+        return self.price>odr2.price
+    
+odr1 = order("TEA",200)
+odr2 = order("Maggi",210)
+
+print(odr1>odr2)
